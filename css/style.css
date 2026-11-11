@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primary-color: #333333;
+    --primary-light: #ffffff; 
+    --pocean-blue: #2563EB; 
+    --light-bone: #E5E7EB;   
+    --heading-font: "Inter", sans-serif;
+    --body-font: "Roboto", sans-serif;
+    --link-font: "Roboto", sans-serif;
+    --body2-font: "Roboto Mono", monospace;
+    --headachr-list: "Noto Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    background-color: var(--primary-light);
+    font-family: var(--body-font) ;
+    color: var(--primary-color);
+}
+
+.container{
+    width: 60%;
+    margin: 0 auto;
+}
+
+header{
+    display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: repeat(6, auto);
+    width: 100%;
+
+}
+
+header h1 {
+    font-family: var(--heading-font);
+    font-weight: 900;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.image-container {
+    width: 100%;
+    height: auto;
+}
+
+.cv-image {
+    width: 100%;
+    height: auto;
+}
+
+.cv-image img {
+    width: 60%;
+    height: 550px;
+    object-fit: cover;
+    object-position: 0% 30%;
+}
+
+.container hr {
+    margin: 1rem 0;
+}
+
+
+.lines-action hr {
+    margin: 1rem 0;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+}
+
+.main.title {
+    font-size: 1.5rem;
+    margin: 1.2rem auto;
+}
+
+.haridus {
+    font-family: var(--headachr-list);
+    margin: 0rem auto;
+}
+
+.haridus {
+    line-height: 4rem;
+}
+
+.haridus-list li {
+    font-family: var(--body-font);
+    list-style: none;   
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+
+/* Первая линия */
+.haridus-list li:nth-child(1) {
+    border-left: 4px solid #3498db;
+}
+
+/* Вторая линия */
+.haridus-list li:nth-child(2) {
+    border-left: 4px solid #E5E7EB;
+}
+
+.main.title {
+    font-size: 1.1rem;
+    margin: 1.2rem auto;
+}
+
+
+.tookogemus {   
+    font-family: var(--headachr-list);
+    margin: 0rem auto;
+    line-height: 2rem;
+}
+
+.places-title {
+    font-size: 0.9rem;
+    margin: 0.8rem auto;
+    color: #2563EB;
+    font-family: var(--body2-font);
+}
+
+.hotell {
+    margin: 2rem auto;
+}
+
+.tookegemus-places-list1 {
+    font-size: 1.1;
+    font-family: var(--body-font);
+}
+
+
+
+.tookegemus-punkt-list2 {
+    font-size: 1.1;
+    font-family: var(--body-font);
+}
+
+.main {
+    width: 100%;
+    margin: auto;
+}
+
+.lisakompetentsid-ja-kvalifikatsioonid {
+    font-family: var(--headachr-list);
+    margin: 0rem auto;
+    line-height: 3rem;
+}
+
+
+.lisakompetentsid-kvalifikatsioonid {
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    gap: 20px 12px;
+    padding: 0;
+    margin-top: 10px;
+    list-style: none;
+}
+
+.lisakompetentsid-kvalifikatsioonid li {
+    font-size: 1.06rem;
+    font-family: var(--body-font);
+    background-color: #D1DDFA;
+    color: #2563EB;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.main {
+    width: 100%;
+    margin: auto;
+}
+
+.minust {
+    font-size: 1.5;
+    font-family: var(--headachr-list);
+    line-height: 3rem;
+    width: 795px;
+    max-width: 100%;
+
+}
+
+.minust p {
+    font-family: var(--body-font);
+    max-width: 100%;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    overflow-wrap: break-word;
+}
+
+.kontakt {
+    font-family: var(--headachr-list);
+    margin: 0rem auto;
+    line-height: 3rem;
+    display: grid;
+}
+
+.phone {
+    margin: 0rem auto;
+}
+
+.gmail {
+   margin: 0rem auto;
+}
+
+.place{
+   margin: 0rem auto;
+}
+
+.phone svg,
+.gmail svg,
+.place svg {
+    color: #2563EB !important;
+    fill: var(--light-bone) !important;
+    stroke: #2563EB !important;
+    stroke-width: 2rem !important;
+    margin: 0rem 1rem;
+}
+
+.phone svg path,
+.gmail svg path,
+.place svg path {
+    fill: var(--primary-light) !important;
+    stroke: #2563EB !important;
+}
+
+
+ul,
+li {
+    list-style: none !important; 
+}
+
+
+@media (max-width: 480px){
+    body{
+        background-color: #333333;
+        width: 100%;
+        padding: 1rem;
+    }
+}
+
+.image-actions {
+    text-align: center;
+}
